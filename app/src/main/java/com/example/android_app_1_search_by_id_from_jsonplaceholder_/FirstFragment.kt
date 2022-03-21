@@ -54,6 +54,8 @@ class FirstFragment : Fragment() {
                     body?.let {
                         //     Log.i("SecondFragment", it.name)
                         binding.textviewFirst.text = it.email
+                        binding.textViewName.text = it.name
+                        binding.textViewUserName.text = it.userName
                     }
                 }
 
