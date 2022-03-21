@@ -15,7 +15,7 @@
         app:strokeColor = "@color/purple_500"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/next"
+        android:text="@string/search"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -23,25 +23,29 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout"
-        android:layout_width="266dp"
-        android:layout_height="51dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="281dp"
+        android:layout_height="77dp"
+        android:hint="@string/hint"
         app:layout_constraintBottom_toTopOf="@+id/button_first"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.443"
+        app:startIconDrawable="@android:drawable/ic_menu_edit">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/idIn"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="66dp"
 
-            android:hint="ID" />
+            />
     </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
         android:id="@+id/textviewFirst"
-        android:layout_width="221dp"
-        android:layout_height="48dp"
+        android:layout_width="215dp"
+        android:layout_height="37dp"
         android:text=""
         app:layout_constraintBottom_toTopOf="@+id/button_first"
         app:layout_constraintEnd_toEndOf="parent"
@@ -50,21 +54,14 @@
 
     <TextView
         android:id="@+id/textViewName"
-        android:layout_width="220dp"
-        android:layout_height="26dp"
+        android:layout_width="213dp"
+        android:layout_height="31dp"
         android:text=""
         app:layout_constraintBottom_toTopOf="@+id/button_first"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textviewFirst" />
+        app:layout_constraintTop_toBottomOf="@+id/textviewFirst"
+        app:layout_constraintVertical_bias="0.476" />
 
-    <TextView
-        android:id="@+id/textViewUserName"
-        android:layout_width="220dp"
-        android:layout_height="31dp"
-        android:text=""
-        app:layout_constraintBottom_toTopOf="@+id/textviewFirst"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout" />
 </androidx.constraintlayout.widget.ConstraintLayout>
